@@ -1,0 +1,72 @@
+.portfolio-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #6c63ff 0%, #4a45b1 100%);
+  color: white;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+
+  .contact-info {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+
+    span {
+      margin: 0 0.5rem;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-header {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .contact-info {
+      font-size: 1rem;
+    }
+
+    .social-links {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+}
